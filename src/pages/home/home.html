@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="titulosStyle">
+      Piensa Seguro
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-title class="titulosStyle"> Menu Inicial </ion-title>
+<br/>
+  <ion-grid>
+    <ion-row>
+        <ion-col col-6 *ngFor="let item of items" (click)="itemSelected(item)">
+            <img [src]="item.image" alt="">
+            <p>{{item.id}}</p>
+
+        </ion-col>
+        
+    </ion-row>
+</ion-grid>
+
+</ion-content>

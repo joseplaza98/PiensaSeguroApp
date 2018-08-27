@@ -1,0 +1,63 @@
+<!--
+  Generated template for the SeguridadRedesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Seguridad Redes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-title class="tituloStyle">
+      Seguridad en las Redes
+    </ion-card-title>
+
+    <ion-card-content class="videos">
+      <iframe src="https://www.youtube.com/embed/KiuTyXehW-8" frameborder="0" allowfullscreen width="560" height="315" class="iframeStyle"></iframe>
+    </ion-card-content>
+    <br/>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-7>
+          <div>
+            <p class="textoStyle">Las redes sociales online son servicios prestados a través de Internet que permiten a los
+              usuarios generar un perfil público.</p>
+          </div>
+          <br/>
+          <div *ngIf="ocultar1">
+            <p class="textoStyle"> A lo anterior se disponen de herramientas que permiten interactuar con el resto de usuarios
+              afines o no al perfil publicado.</p>
+          </div>
+        </ion-col>
+
+        <ion-col col-5>
+          <div>
+
+
+            <button ion-button block class="btnStyle" (click)="acciontodos()">
+              {{ !ocultartodos ? 'Ver más' : 'Ver menos' }}
+            </button>
+            <div>
+              <button ion-button class="btnStyle" (click)="aEvaluacion()">Evaluación</button>
+            </div>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+  </ion-card>
+
+
+
+</ion-content>
